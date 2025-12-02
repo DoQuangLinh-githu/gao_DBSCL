@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gạo Nàng Thơm Chợ Đào - Gạo Việt Nam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .img-zoom { transition: transform 0.4s ease; }
+    .img-zoom:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-amber-50 text-gray-800">
+
+  <!-- Header cố định -->
+  <header class="fixed top-0 w-full bg-white shadow-md z-50 border-b border-yellow-100">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" class="text-2xl md:text-3xl font-black text-yellow-600 tracking-wider">GẠO VIỆT NAM</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-12 text-lg font-medium items-center">
+        <li><a href="Index.html" class="hover:text-yellow-600 transition">Trang chủ</a></li>
+
+        <!-- Dropdown Sản phẩm – chỉ chữ -->
+        <li class="relative group">
+          <a href="#products" class="hover:text-yellow-600 transition flex items-center">
+            Sản phẩm
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
+            <li><a href="st25.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Gạo ST25</a></li>
+            <li><a href="nangthom.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Nàng Thơm Chợ Đào</a></li>
+            <li><a href="tam-haihau.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Tám Hải Hậu</a></li>
+            <li><a href="huyet-rong.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Gạo Huyết Rồng</a></li>
+            <li><a href="nep-thaibinh.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Nếp Cái Hoa Vàng</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown Tin tức & Sự kiện -->
+        <li class="relative group">
+          <a href="#" class="hover:text-yellow-600 transition flex items-center">
+            Tin tức & Sự kiện
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
+            <li><a href="tin-tuc.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Tin tức</a></li>
+            <li><a href="su-kien.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Sự kiện</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact" class="hover:text-yellow-600 transition">Liên hệ</a></li>
+      </ul>
+
+      <!-- Mobile Menu -->
+      <div x-data="{open:false}" class="md:hidden">
+        <button @click="open=!open" class="text-3xl text-yellow-600">Menu</button>
+        <div x-show="open" @click.away="open=false" class="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-yellow-100">
+          <ul class="py-8 text-center space-y-6 text-lg font-medium">
+            <li><a href="Index.html" @click="open=false" class="block hover:text-yellow-600">Trang chủ</a></li>
+            <li><a href="#products" @click="open=false" class="block hover:text-yellow-600">Sản phẩm</a></li>
+            <li><a href="tin-tuc.html" @click="open=false" class="block hover:text-yellow-600">Tin tức</a></li>
+            <li><a href="su-kien.html" @click="open=false" class="block hover:text-yellow-600">Sự kiện</a></li>
+            <li><a href="#contact" @click="open=false" class="block hover:text-yellow-600">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-28 text-center overflow-hidden">
+    <img src="gao-nang-thom.jpg" alt="Cánh đồng Nàng Thơm Chợ Đào" class="absolute inset-0 w-full h-full object-cover brightness-50">
+    <div class="relative max-w-5xl mx-auto px-6">
+      <h1 class="text-5xl md:text-7xl font-black text-white drop-shadow-2xl leading-tight">
+        Gạo Nàng Thơm<br>Chợ Đào
+      </h1>
+      <p class="text-3xl md:text-5xl text-amber-200 font-medium mt-4 drop-shadow-lg">
+        “Nữ hoàng” của các giống lúa thơm Việt Nam
+      </p>
+    </div>
+  </section>
+
+  <!-- Giới thiệu ngắn gọn -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="I_gao-nang-thom.jpg" alt="Hạt gạo Nàng Thơm trắng sữa" class="rounded-3xl shadow-2xl img-zoom">
+      </div>
+      <div class="bg-white p-10 rounded-3xl shadow-2xl text-xl space-y-6">
+        <p><strong class="text-amber-700">Nguồn gốc:</strong> Giống lúa quý hiếm truyền thống của miền Tây Nam Bộ, tập trung tại Chợ Đào (Mỹ Lệ, Long An) và một số huyện Tiền Giang.</p>
+        <p><strong class="text-amber-700">Đặc điểm:</strong> Chỉ trồng được 1 vụ/năm (vụ mùa tháng 6–11), hạt thon dài, trắng sữa, thơm nồng tự nhiên như hoa nhài.</p>
+        <p><strong class="text-amber-700">Hương vị:</strong> Cơm dẻo mềm, ngọt đậm, để nguội 1–2 ngày vẫn thơm và không bị lại gạo.</p>
+        <p>Được ví như “nữ hoàng” của các giống lúa thơm Việt Nam, giá trị xuất khẩu cao nhất trong nhóm gạo thơm nội địa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thông tin chi tiết -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-black text-amber-800 text-center mb-16">Thông tin chi tiết Gạo Nàng Thơm Chợ Đào</h2>
+
+      <div class="grid lg:grid-cols-2 gap-12 mb-16">
+
+        <!-- 1. Nguồn gốc & lịch sử -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-amber-700">1. Nguồn gốc quý hiếm</h3>
+          <p class="text-lg leading-relaxed">Nàng Thơm Chợ Đào là giống lúa cổ có từ hàng trăm năm trước ở vùng Chợ Đào (Long An). Đây là giống lúa mùa truyền thống, chỉ trồng được 1 vụ/năm trên đất phù sa ngọt, không chịu được giống lúa ngắn ngày hay vụ đông xuân. Vì thế sản lượng rất ít, thường chỉ vài nghìn tấn/năm.</p>
+          <img src="1_gao-nang-thom.jpg" alt="Nông dân gieo cấy Nàng Thơm" class="rounded-2xl shadow-xl img-zoom">
+        </div>
+
+        <!-- 2. Quy trình sản xuất -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-amber-700">2. Quy trình canh tác truyền thống</h3>
+          <ul class="text-lg space-y-3 list-disc pl-6">
+            <li>Chỉ gieo sạ vào tháng 6 âm lịch, thu hoạch tháng 11</li>
+            <li>Không dùng giống lúa ngắn ngày, không trồng vụ đông xuân</li>
+            <li>Hạn chế tối đa phân hóa học, thuốc trừ sâu</li>
+            <li>Thu hoạch thủ công, phơi khô tự nhiên trên sân đất</li>
+            <li>Giữ nguyên mùi thơm đặc trưng nhờ bảo quản đúng cách</li>
+          </ul>
+          <img src="2_gao-nang-thom.jpg" alt="Thu hoạch Nàng Thơm Chợ Đào" class="rounded-2xl shadow-xl img-zoom">
+        </div>
+
+        <!-- 3. Hương vị & chất lượng -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-amber-700">3. Hương vị “đỉnh cao” của gạo thơm</h3>
+          <div class="bg-amber-50 p-8 rounded-2xl text-lg">
+            <ul class="space-y-4">
+              <li>Mùi thơm nồng tự nhiên (2-AP cao nhất trong các giống lúa thơm Việt Nam)</li>
+              <li>Cơm dẻo mềm, ngọt đậm, hạt trắng sữa óng ánh</li>
+              <li>Để nguội 48 giờ vẫn giữ nguyên độ thơm và không bị cứng</li>
+              <li>Được các đầu bếp 5 sao đánh giá là “gạo thơm ngon nhất Việt Nam”</li>
+            </ul>
+          </div>
+          <img src="3_gao-nang-thom.jpg" alt="Cơm Nàng Thơm trắng thơm" class="rounded-2xl shadow-xl img-zoom">
+        </div>
+
+        <!-- 4. Thị trường & xuất khẩu -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-amber-700">4. Thị trường tiêu thụ & xuất khẩu</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-lg">
+              <thead>
+                <tr class="bg-amber-100">
+                  <th class="border border-amber-300 px-6 py-4">Thị trường</th>
+                  <th class="border border-amber-300 px-6 py-4">Đặc điểm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="border border-amber-200 px-6 py-4">Nội địa cao cấp</td><td class="border border-amber-200 px-6 py-4">TP.HCM, Hà Nội, Đà Nẵng – luôn khan hiếm</td></tr>
+                <tr class="bg-amber-50"><td class="border border-amber-200 px-6 py-4">Nhật Bản</td><td class="border border-amber-200 px-6 py-4">Rất ưa chuộng, giá cao nhất trong gạo thơm Việt</td></tr>
+                <tr><td class="border border-amber-200 px-6 py-4">Châu Âu</td><td class="border border-amber-200 px-6 py-4">Pháp, Đức, Bỉ – dùng trong nhà hàng Việt & châu Á</td></tr>
+                <tr class="bg-amber-50"><td class="border border-amber-200 px-6 py-4">Mỹ, Úc, Canada</td><td class="border border-amber-200 px-6 py-4">Cộng đồng Việt kiều, nhà hàng cao cấp</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Giải thưởng & danh hiệu -->
+      <div class="text-center py-16 bg-gradient-to-r from-amber-700 to-amber-900 rounded-3xl text-white">
+        <h3 class="text-4xl font-black mb-8">Luôn dẫn đầu các cuộc thi gạo ngon</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+          <div class="bg-white/20 p-6 rounded-2xl">
+            <p class="text-6xl font-black">🥇</p>
+            <p class="text-xl mt-2">Nhiều năm liền Giải Nhất<br>Gạo ngon Việt Nam</p>
+          </div>
+          <div class="bg-white/20 p-6 rounded-2xl">
+            <p class="text-6xl font-black">Top 3</p>
+            <p class="text-xl mt-2">World’s Best Rice<br>(nhiều kỳ liên tiếp)</p>
+          </div>
+          <div class="bg-white/20 p-6 rounded-2xl">
+            <p class="text-6xl font-black">5★</p>
+            <p class="text-xl mt-2">Đầu bếp Michelin<br>& nhà hàng cao cấp</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to action -->
+      <div class="text-center py-20">
+        <a href="#contact" class="inline-block bg-amber-600 hover:bg-amber-700 text-white px-16 py-8 rounded-full text-2xl font-bold shadow-2xl transition transform hover:scale-105">
+          Liên hệ mua Nàng Thơm Chợ Đào chính gốc ngay hôm nay
+        </a>
+        <p class="mt-6 text-gray-600 text-lg">Chỉ có hàng vụ mùa (tháng 11–3) – Đặt trước để giữ hàng!</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

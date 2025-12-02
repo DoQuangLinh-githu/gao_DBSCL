@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Công ty TNHH Gạo Việt Nam - Gạo Cao Cấp Xuất Khẩu</title>
-  <meta name="description" content="Gạo ST25 ngon nhất thế giới, Nàng Thơm Chợ Đào, Tám Hải Hậu, Huyết Rồng, Nếp Thái Bình – 100% Việt Nam">
+  <title>Sự kiện - Gạo Việt Nam | Hội chợ, Triển lãm, Lễ hội gạo</title>
+  <meta name="description" content="Các sự kiện gạo lớn nhất Việt Nam và quốc tế: World Rice Conference, Festival Gạo Việt, Hội chợ OCOP, Lễ hội Cốm làng Vòng...">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    .event-card { transition: all 0.4s; }
+    .event-card:hover { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Header cố định -->
+ <!-- Header cố định -->
   <header class="fixed top-0 w-full bg-white shadow-md z-50 border-b border-yellow-100">
     <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
       <a href="#" class="text-2xl md:text-3xl font-black text-yellow-600 tracking-wider">GẠO VIỆT NAM</a>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-12 text-lg font-medium items-center">
-        <li><a href="#home" class="hover:text-yellow-600 transition">Trang chủ</a></li>
+        <li><a href="Index.html" class="hover:text-yellow-600 transition">Trang chủ</a></li>
 
         <!-- Dropdown Sản phẩm – chỉ chữ -->
         <li class="relative group">
@@ -74,70 +75,110 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" 
-           style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1591794444170-7d03117f20e5?q=80&w=2070&auto=format&fit=crop')">
-    <div class="relative z-10 px-6 max-w-5xl">
-      <h2 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight drop-shadow-2xl">Hạt Ngọc Trời Việt</h2>
-      <p class="text-2xl md:text-4xl text-yellow-200 mb-10 font-light tracking-wide">Gạo ngon nhất thế giới – Tự hào Việt Nam</p>
-      <a href="#products" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition transform hover:-translate-y-2">
-        Xem sản phẩm ngay
-      </a>
-    </div>
-  </section>
-
-  <!-- Sản phẩm -->
-  <section id="products" class="py-24 bg-gray-50">
+  <!-- Hero Sự kiện -->
+  <section class="relative pt-32 pb-20 bg-gradient-to-b from-yellow-100 to-white text-center">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl md:text-6xl font-black text-center text-yellow-700 mb-16">Sản phẩm gạo cao cấp</h2>
-      <p class="text-center text-xl text-gray-600 mb-16 max-w-3xl mx-auto">Những giống lúa quý được chọn lọc từ cánh đồng vàng óng ánh</p>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <a href="st25.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_ST25.jpg" alt="Gạo ST25" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Gạo ST25</h3>
-            <p class="text-lg text-gray-700">Ngon nhất thế giới 2019 & 2023</p>
-          </div>
-        </a>
-
-        <a href="nangthom.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao-nang-thom.jpg" alt="Nàng Thơm Chợ Đào" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Nàng Thơm Chợ Đào</h3>
-            <p class="text-lg text-gray-700">Thơm nồng, dẻo mềm truyền thống</p>
-          </div>
-        </a>
-
-        <a href="tam-haihau.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_tam_hai_hau.jpg" alt="Tám Hải Hậu" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Tám Hải Hậu</h3>
-            <p class="text-lg text-gray-700">Đặc sản miền Bắc – Vua của cốm làng Vòng</p>
-          </div>
-        </a>
-
-        <a href="huyet-rong.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_huyet_rong.jpg" alt="Gạo Huyết Rồng" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Gạo Huyết Rồng</h3>
-            <p class="text-lg text-gray-700">Gạo lứt đỏ tốt cho sức khỏe</p>
-          </div>
-        </a>
-
-        <a href="nep-thaibinh.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_net_cai_hoa_vang.jpg" alt="Nếp Cái Hoa Vàng" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Nếp Cái Hoa Vàng</h3>
-            <p class="text-lg text-gray-700">Nếp ngon nhất Việt Nam</p>
-          </div>
-        </a>
-      </div>
+      <h1 class="text-5xl md:text-7xl font-black text-yellow-700 mb-6">Sự kiện Gạo Việt Nam</h1>
+      <p class="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto">
+        Hội chợ, triển lãm, lễ hội, giải thưởng gạo lớn nhất trong nước & quốc tế
+      </p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="contact" class="bg-yellow-600 text-white py-16">
+  <!-- Danh sách sự kiện sắp tới & đã diễn ra -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Sự kiện sắp tới -->
+      <div class="mb-20">
+        <h2 class="text-4xl md:text-5xl font-black text-yellow-700 text-center mb-12">Sự kiện sắp tới</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          <div class="event-card bg-white rounded-3xl overflow-hidden shadow-xl">
+            <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-6 text-center">
+              <p class="text-5xl font-black">15–18</p>
+              <p class="text-2xl font-bold">Tháng 3 2026</p>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Festival Gạo Việt Nam 2026</h3>
+              <p class="text-gray-600 mb-4">TP. Hồ Chí Minh – Quy tụ hơn 300 gian hàng gạo cao cấp, hội thảo xuất khẩu</p>
+              <span class="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold">Sắp diễn ra</span>
+            </div>
+          </div>
+
+          <div class="event-card bg-white rounded-3xl overflow-hidden shadow-xl">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 text-center">
+              <p class="text-5xl font-black">20–22</p>
+              <p class="text-2xl font-bold">Tháng 5 2026</p>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">World Rice Conference 2026</h3>
+              <p class="text-gray-600 mb-4">Hà Nội – ST25 bảo vệ ngôi vương thế giới lần thứ 4?</p>
+              <span class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold">Đăng ký gian hàng</span>
+            </div>
+          </div>
+
+          <div class="event-card bg-white rounded-3xl overflow-hidden shadow-xl">
+            <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white p-6 text-center">
+              <p class="text-5xl font-black">10–15</p>
+              <p class="text-2xl font-bold">Tháng 10 2026</p>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Lễ hội Cốm làng Vòng 2026</h3>
+              <p class="text-gray-600 mb-4">Hà Nội – Trưng bày cốm Tám Hải Hậu mới, trình diễn làm cốm truyền thống</p>
+              <span class="inline-block bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-bold">Miễn phí vào cửa</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sự kiện đã diễn ra (nổi bật) -->
+      <div>
+        <h2 class="text-4xl md:text-5xl font-black text-yellow-700 text-center mb-12">Sự kiện đã diễn ra</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          <div class="event-card bg-white rounded-3xl overflow-hidden shadow-xl opacity-90">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd9cc1dde30b?q=80&w=2070" alt="World Best Rice 2023" class="w-full h-56 object-cover">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">World’s Best Rice 2023</h3>
+              <p class="text-sm text-gray-500 mb-2">15–17/11/2023 – Philippines</p>
+              <p class="text-gray-600">ST25 lần thứ 2 vô địch thế giới</p>
+            </div>
+          </div>
+
+          <div class="event-card bg-white rounded-3xl overflow-hidden shadow-xl opacity-90">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070" alt="Hội chợ OCOP" class="w-full h-56 object-cover">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Hội chợ OCOP Quốc gia 2024</h3>
+              <p class="text-sm text-gray-500 mb-2">01–05/10/2024 – Hà Nội</p>
+              <p class="text-gray-600">Nếp Cái Hoa Vàng Thái Bình đạt OCOP 5 sao</p>
+            </div>
+          </div>
+
+          <div class="event-card bg-white rounded-3xl overflow-hidden shadow-xl opacity-90">
+            <img src="https://images.unsplash.com/photo-1581092580480-4e7e64da9d7b?q=80&w=2070" alt="Lễ hội Gạo mới" class="w-full h-56 object-cover">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Lễ hội Gạo mới Đồng bằng sông Cửu Long</h3>
+              <p class="text-sm text-gray-500 mb-2">20/11/2024 – Sóc Trăng</p>
+              <p class="text-gray-600">Ra mắt giống ST28 & ST30</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="#" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white px-10 py-4 rounded-full text-lg font-bold transition">
+            Xem tất cả sự kiện đã diễn ra
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer (giống hệt trang chủ) -->
+  <footer class="bg-yellow-600 text-white py-16">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid md:grid-cols-4 gap-10">
         <div>

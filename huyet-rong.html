@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gạo Huyết Rồng Lứt Đỏ - Siêu thực phẩm của Việt Nam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .img-zoom { transition: transform 0.4s ease; }
+    .img-zoom:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-red-50 text-gray-800">
+
+  <!-- Header cố định -->
+  <header class="fixed top-0 w-full bg-white shadow-md z-50 border-b border-yellow-100">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" class="text-2xl md:text-3xl font-black text-yellow-600 tracking-wider">GẠO VIỆT NAM</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-12 text-lg font-medium items-center">
+        <li><a href="Index.html" class="hover:text-yellow-600 transition">Trang chủ</a></li>
+
+        <!-- Dropdown Sản phẩm – chỉ chữ -->
+        <li class="relative group">
+          <a href="#products" class="hover:text-yellow-600 transition flex items-center">
+            Sản phẩm
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
+            <li><a href="st25.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Gạo ST25</a></li>
+            <li><a href="nangthom.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Nàng Thơm Chợ Đào</a></li>
+            <li><a href="tam-haihau.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Tám Hải Hậu</a></li>
+            <li><a href="huyet-rong.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Gạo Huyết Rồng</a></li>
+            <li><a href="nep-thaibinh.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Nếp Cái Hoa Vàng</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown Tin tức & Sự kiện -->
+        <li class="relative group">
+          <a href="#" class="hover:text-yellow-600 transition flex items-center">
+            Tin tức & Sự kiện
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
+            <li><a href="tin-tuc.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Tin tức</a></li>
+            <li><a href="su-kien.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Sự kiện</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact" class="hover:text-yellow-600 transition">Liên hệ</a></li>
+      </ul>
+
+      <!-- Mobile Menu -->
+      <div x-data="{open:false}" class="md:hidden">
+        <button @click="open=!open" class="text-3xl text-yellow-600">Menu</button>
+        <div x-show="open" @click.away="open=false" class="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-yellow-100">
+          <ul class="py-8 text-center space-y-6 text-lg font-medium">
+            <li><a href="#home" @click="open=false" class="block hover:text-yellow-600">Trang chủ</a></li>
+            <li><a href="#products" @click="open=false" class="block hover:text-yellow-600">Sản phẩm</a></li>
+            <li><a href="tin-tuc.html" @click="open=false" class="block hover:text-yellow-600">Tin tức</a></li>
+            <li><a href="su-kien.html" @click="open=false" class="block hover:text-yellow-600">Sự kiện</a></li>
+            <li><a href="#contact" @click="open=false" class="block hover:text-yellow-600">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-24 text-center overflow-hidden">
+    <img src="gao_huyet_rong.jpg" alt="Cánh đồng gạo Huyết Rồng" class="absolute inset-0 w-full h-full object-cover brightness-50">
+    <div class="relative max-w-5xl mx-auto px-6">
+      <h1 class="text-5xl md:text-7xl font-black text-white drop-shadow-2xl leading-tight">
+        Gạo Huyết Rồng<br>
+        <span class="text-4xl md:text-6xl text-red-300">Lứt đỏ - Siêu thực phẩm Việt Nam</span>
+      </h1>
+      <p class="text-2xl text-white font-medium mt-6 drop-shadow-lg">Chỉ 53 calo/bát cơm – Giàu chất chống oxy hóa nhất thế giới</p>
+    </div>
+  </section>
+
+  <!-- Giới thiệu ngắn -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="https://images.unsplash.com/photo-1628448316870-1c8a2b7e0e30?q=80&w=2070&auto=format&fit=crop" alt="Hạt gạo Huyết Rồng đỏ thẫm" class="rounded-3xl shadow-2xl img-zoom">
+      </div>
+      <div class="bg-white p-10 rounded-3xl shadow-2xl text-xl space-y-6">
+        <p><strong class="text-red-700">Nguồn gốc:</strong> Giống lúa cổ từ vùng cao nguyên Madagascar (Châu Phi), được đưa về Việt Nam năm 2014, trồng thành công tại Đồng Tháp Mười (Long An, Tiền Giang).</p>
+        <p><strong class="text-red-700">Màu sắc đặc trưng:</strong> Vỏ trấu đen, hạt gạo màu đỏ thẫm (do giàu anthocyanin – chất tạo màu đỏ trong việt quất, nho đen).</p>
+        <p><strong class="text-red-700">Giá trị dinh dưỡng:</strong> Chứa lượng chất xơ gấp 10 lần gạo trắng, giàu sắt, kẽm, magie, vitamin B1, E.</p>
+        <p>Chỉ số đường huyết thấp (GI ≈ 42), cực tốt cho người tiểu đường, giảm cân, tim mạch, phòng chống ung thư.</p>
+        <p>Chỉ <strong class="text-red-600 font-bold">53 calo</strong> trong 1 bát cơm (so với 200 calo gạo trắng).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thông tin chi tiết -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-black text-red-800 text-center mb-16">Thông tin chi tiết Gạo Huyết Rồng</h2>
+
+      <div class="grid lg:grid-cols-2 gap-12 mb-16">
+
+        <!-- 1. Nguồn gốc & lịch sử -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-red-700">1. Nguồn gốc & hành trình về Việt Nam</h3>
+          <p class="text-lg leading-relaxed">Gạo Huyết Rồng (tên khoa học: Oryza glaberrima) có nguồn gốc từ Tây Phi hơn 3.500 năm trước. Năm 2014, Công ty TNHH Anh Đào (Long An) đã nhập giống từ Madagascar và lai tạo thành công tại vùng Đồng Tháp Mười – nơi có đất phèn phù hợp với giống lúa chịu hạn, chịu mặn cực tốt này.</p>
+          <img src="https://images.pexels.com/photos/326207/pexels-photo-326207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Nông dân trồng gạo Huyết Rồng" class="rounded-2xl shadow-xl img-zoom">
+        </div>
+
+        <!-- 2. Quy trình sản xuất -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-red-700">2. Quy trình sản xuất sạch</h3>
+          <ul class="text-lg space-y-3 list-disc pl-6">
+            <li>Trồng hoàn toàn hữu cơ, không sử dụng phân hóa học hay thuốc trừ sâu</li>
+            <li>Thu hoạch thủ công để giữ nguyên lớp cám đỏ giàu dinh dưỡng</li>
+            <li>Xay xát nhẹ (chỉ loại bỏ vỏ trấu), giữ nguyên lớp cám đỏ chứa anthocyanin</li>
+            <li>Đóng gói chân không, bảo quản tự nhiên</li>
+          </ul>
+          <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?q=80&w=2070&auto=format&fit=crop" alt="Xay xát gạo Huyết Rồng" class="rounded-2xl shadow-xl img-zoom">
+        </div>
+
+        <!-- 3. Lợi ích sức khỏe -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-red-700">3. Lợi ích sức khỏe vượt trội</h3>
+          <div class="bg-red-50 p-8 rounded-2xl text-lg">
+            <ul class="space-y-4">
+              <li>Giàu <strong>anthocyanin</strong> gấp 10 lần việt quất → chống oxy hóa cực mạnh</li>
+              <li>Chất xơ cao → hỗ trợ tiêu hóa, giảm cân hiệu quả</li>
+              <li>Chỉ số đường huyết thấp → an toàn cho người tiểu đường</li>
+              <li>Bổ máu, tăng sức đề kháng, tốt cho tim mạch</li>
+              <li>Phòng ngừa ung thư nhờ chất chống oxy hóa tự nhiên</li>
+            </ul>
+          </div>
+          <img src="https://images.pexels.com/photos/6646919/pexels-photo-6646919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cơm gạo Huyết Rồng đỏ đẹp mắt" class="rounded-2xl shadow-xl img-zoom">
+        </div>
+
+        <!-- 4. Thị trường & tiêu thụ -->
+        <div class="space-y-6">
+          <h3 class="text-3xl font-bold text-red-700">4. Thị trường tiêu thụ hiện nay</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-lg">
+              <thead>
+                <tr class="bg-red-100">
+                  <th class="border border-red-300 px-6 py-4">Khu vực</th>
+                  <th class="border border-red-300 px-6 py-4">Đặc điểm tiêu thụ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="border border-red-200 px-6 py-4">TP.HCM & Hà Nội</td><td class="border border-red-200 px-6 py-4">Rất hot tại siêu thị, cửa hàng thực dưỡng</td></tr>
+                <tr class="bg-red-50"><td class="border border-red-200 px-6 py-4">Người ăn kiêng, tiểu đường</td><td class="border border-red-200 px-6 py-4">Nhóm khách hàng chính, mua đều đặn</td></tr>
+                <tr><td class="border border-red-200 px-6 py-4">Xuất khẩu</td><td class="border border-red-200 px-6 py-4">Mỹ, Úc, Đức, Nhật (dòng gạo chức năng cao cấp)</td></tr>
+                <tr class="bg-red-50"><td class="border border-red-200 px-6 py-4">Nhà hàng, khách sạn 5 sao</td><td class="border border-red-200 px-6 py-4">Dùng làm cơm đỏ trang trí món ăn cao cấp</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chứng nhận & giải thưởng -->
+      <div class="text-center py-16 bg-gradient-to-r from-red-700 to-red-900 rounded-3xl text-white">
+        <h3 class="text-4xl font-black mb-6">Được công nhận & tin dùng</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div><span class="text-6xl block">USDA</span><p class="text-sm">Organic</p></div>
+          <div><span class="text-6xl block">EU</span><p class="text-sm">Organic</p></div>
+          <div><span class="text-6xl block">JAS</span><p class="text-sm">Japan Organic</p></div>
+          <div><span class="text-6xl block">Việt Nam</span><p class="text-sm">Hữu cơ tiêu chuẩn</p></div>
+        </div>
+      </div>
+
+      <!-- Call to action -->
+      <div class="text-center py-20">
+        <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white px-16 py-8 rounded-full text-2xl font-bold shadow-2xl transition transform hover:scale-105">
+          Liên hệ mua Gạo Huyết Rồng chính hãng ngay hôm nay
+        </a>
+        <p class="mt-6 text-gray-600 text-lg">Giao hàng toàn quốc – Đóng gói 1kg, 2kg, 5kg hút chân không</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

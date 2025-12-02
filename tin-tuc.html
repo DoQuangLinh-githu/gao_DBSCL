@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin tức - Gạo Việt Nam | Cập nhật hàng ngày</title>
+  <meta name="description" content="Tin tức mới nhất về gạo Việt Nam: ST25 vô địch thế giới, giá gạo xuất khẩu, mùa vụ mới, công nghệ sản xuất...">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    .img-zoom { transition: transform 0.4s; }
+    .img-zoom:hover { transform: scale(1.03); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header cố định -->
+  <header class="fixed top-0 w-full bg-white shadow-md z-50 border-b border-yellow-100">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" class="text-2xl md:text-3xl font-black text-yellow-600 tracking-wider">GẠO VIỆT NAM</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-12 text-lg font-medium items-center">
+        <li><a href="Index.html" class="hover:text-yellow-600 transition">Trang chủ</a></li>
+
+        <!-- Dropdown Sản phẩm – chỉ chữ -->
+        <li class="relative group">
+          <a href="#products" class="hover:text-yellow-600 transition flex items-center">
+            Sản phẩm
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
+            <li><a href="st25.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Gạo ST25</a></li>
+            <li><a href="nangthom.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Nàng Thơm Chợ Đào</a></li>
+            <li><a href="tam-haihau.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Tám Hải Hậu</a></li>
+            <li><a href="huyet-rong.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Gạo Huyết Rồng</a></li>
+            <li><a href="nep-thaibinh.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Nếp Cái Hoa Vàng</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown Tin tức & Sự kiện -->
+        <li class="relative group">
+          <a href="#" class="hover:text-yellow-600 transition flex items-center">
+            Tin tức & Sự kiện
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
+            <li><a href="tin-tuc.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Tin tức</a></li>
+            <li><a href="su-kien.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Sự kiện</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact" class="hover:text-yellow-600 transition">Liên hệ</a></li>
+      </ul>
+
+      <!-- Mobile Menu -->
+      <div x-data="{open:false}" class="md:hidden">
+        <button @click="open=!open" class="text-3xl text-yellow-600">Menu</button>
+        <div x-show="open" @click.away="open=false" class="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-yellow-100">
+          <ul class="py-8 text-center space-y-6 text-lg font-medium">
+            <li><a href="Index.html" @click="open=false" class="block hover:text-yellow-600">Trang chủ</a></li>
+            <li><a href="#products" @click="open=false" class="block hover:text-yellow-600">Sản phẩm</a></li>
+            <li><a href="tin-tuc.html" @click="open=false" class="block hover:text-yellow-600">Tin tức</a></li>
+            <li><a href="su-kien.html" @click="open=false" class="block hover:text-yellow-600">Sự kiện</a></li>
+            <li><a href="#contact" @click="open=false" class="block hover:text-yellow-600">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Tin tức -->
+  <section class="relative pt-32 pb-20 bg-gradient-to-b from-yellow-50 to-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-black text-yellow-700 mb-6">Tin tức Gạo Việt Nam</h1>
+      <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">Cập nhật mỗi ngày: giá gạo, mùa vụ, giải thưởng, xuất khẩu, công nghệ mới...</p>
+    </div>
+  </section>
+
+  <!-- Danh sách tin tức -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Tin 1 -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition img-zoom">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070" alt="ST25 vô địch 2025" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-yellow-600 text-sm font-bold">01/12/2025</span>
+              <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Gạo ST25 chính thức vô địch thế giới lần thứ 3 liên tiếp</h3>
+              <p class="text-gray-600 line-clamp-3">Tại Hội nghị Gạo Thế giới 2025, ST25 tiếp tục được The Rice Trader công nhận là “World’s Best Rice”...</p>
+              <span class="text-yellow-600 font-semibold mt-4 inline-block">Đọc thêm →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- Tin 2 -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition img-zoom">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd9cc1dde30b?q=80&w=2070" alt="Xuất khẩu kỷ lục" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-yellow-600 text-sm font-bold">28/11/2025</span>
+              <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Việt Nam xuất khẩu 8,1 triệu tấn gạo trong 11 tháng – cao nhất lịch sử</h3>
+              <p class="text-gray-600 line-clamp-3">Riêng gạo thơm cao cấp (ST25, Nàng Thơm, Huyết Rồng) chiếm hơn 60% giá trị xuất khẩu...</p>
+              <span class="text-yellow-600 font-semibold mt-4 inline-block">Đọc thêm →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- Tin 3 -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition img-zoom">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1581092580480-4e7e64da9d7b?q=80&w=2070" alt="Mùa cốm 2025" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-yellow-600 text-sm font-bold">15/10/2025</span>
+              <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Mùa cốm Tám Hải Hậu 2025: thơm ngọt nhất trong 10 năm qua</h3>
+              <p class="text-gray-600 line-clamp-3">Nông dân Hải Hậu vui mừng vì thời tiết thuận lợi, cốm xanh mướt, dẻo thơm đặc trưng...</p>
+              <span class="text-yellow-600 font-semibold mt-4 inline-block">Đọc thêm →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- Tin 4 -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition img-zoom">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1628448316870-1c8a2b7e0e30?q=80&w=2070" alt="Huyết Rồng" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-yellow-600 text-sm font-bold">10/11/2025</span>
+              <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Gạo Huyết Rồng được Nhật Bản công nhận là “siêu thực phẩm”</h3>
+              <p class="text-gray-600 line-clamp-3">Hàm lượng anthocyanin cao gấp 12 lần việt quất, được khuyến khích dùng thay gạo trắng...</p>
+              <span class="text-yellow-600 font-semibold mt-4 inline-block">Đọc thêm →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- Tin 5 -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition img-zoom">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1603739902825-9e7e41e95ed7?q=80&w=2070" alt="Nếp cái hoa vàng" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-yellow-600 text-sm font-bold">05/11/2025</span>
+              <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Nếp Cái Hoa Vàng Thái Bình chính thức vào mùa Tết 2026</h3>
+              <p class="text-gray-600 line-clamp-3">Đã có hơn 5.000 đơn đặt trước bánh chưng từ nếp cái chính gốc...</p>
+              <span class="text-yellow-600 font-semibold mt-4 inline-block">Đọc thêm →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- Tin 6 -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition img-zoom">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1591794444170-7d03117f20e5?q=80&w=2070" alt="Triển lãm gạo" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-yellow-600 text-sm font-bold">01/12/2025</span>
+              <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Triển lãm Gạo Việt Nam 2025 sẽ diễn ra tại TP.HCM</h3>
+              <p class="text-gray-600 line-clamp-3">Hơn 200 gian hàng từ các thương hiệu gạo nổi tiếng: ST25, Lộc Trời, Tân Long...</p>
+              <span class="text-yellow-600 font-semibold mt-4 inline-block">Đọc thêm →</span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Phân trang -->
+      <div class="text-center mt-16">
+        <div class="inline-flex space-x-2">
+          <span class="px-5 py-3 bg-yellow-600 text-white rounded-full font-bold">1</span>
+          <a href="#" class="px-5 py-3 bg-gray-200 hover:bg-yellow-600 hover:text-white rounded-full transition">2</a>
+          <a href="#" class="px-5 py-3 bg-gray-200 hover:bg-yellow-600 hover:text-white rounded-full transition">3</a>
+          <span class="px-5 py-3 text-gray-600">...</span>
+          <a href="#" class="px-5 py-3 bg-gray-200 hover:bg-yellow-600 hover:text-white rounded-full transition">10</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (giống trang chủ) -->
+  <footer class="bg-yellow-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <h3 class="text-3xl font-black mb-4">GẠO VIỆT NAM</h3>
+          <p class="text-yellow-100 leading-relaxed">Hạt ngọc trời – Mang tinh hoa đồng lúa Việt ra thế giới</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-4">Liên hệ</h4>
+          <p class="text-yellow-50 leading-relaxed">Công ty TNHH Gạo Việt Nam<br>123 Đường Lúa Vàng, TP. Hồ Chí Minh<br>Hotline: 1900 1234</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-4">Email</h4>
+          <p class="text-yellow-50">info@gaovietnam.vn</p>
+          <h4 class="text-xl font-bold mt-6 mb-4">Zalo / Điện thoại</h4>
+          <p class="text-yellow-50">0909 888 999</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-6">Theo dõi chúng tôi</h4>
+          <div class="flex space-x-6 text-3xl">
+            <a href="#" class="hover:text-yellow-200 transition">Facebook</a>
+            <a href="#" class="hover:text-yellow-200 transition">Instagram</a>
+            <a href="#" class="hover:text-yellow-200 transition">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-yellow-500 mt-12 pt-8 text-center text-yellow-100">
+        <p class="text-sm">© 2025 Công ty TNHH Gạo Việt Nam. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
