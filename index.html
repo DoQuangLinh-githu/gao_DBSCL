@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Công ty TNHH Gạo Việt Nam - Gạo Cao Cấp Xuất Khẩu</title>
-  <meta name="description" content="Gạo ST25 ngon nhất thế giới, Nàng Thơm Chợ Đào, Tám Hải Hậu, Huyết Rồng, Nếp Thái Bình – 100% Việt Nam">
+  <title>Gạo Đồng Bằng Sông Cửu Long - Hạt Ngọc Miền Tây</title>
+  <meta name="description" content="Gạo ST25 ngon nhất thế giới, ST24, Jasmine 85, Đài Thơm 8, Nàng Hoa 9, Gạo Ông Cua - 100% từ cánh đồng phù sa màu mỡ Đồng Bằng Sông Cửu Long">
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
@@ -16,58 +16,63 @@
 <body class="bg-white text-gray-800">
 
   <!-- Header cố định -->
-  <header class="fixed top-0 w-full bg-white shadow-md z-50 border-b border-yellow-100">
+  <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 border-b border-green-100">
     <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <a href="#" class="text-2xl md:text-3xl font-black text-yellow-600 tracking-wider">GẠO VIỆT NAM</a>
+      <a href="#" class="text-2xl md:text-3xl font-black tracking-wider">
+        <span style="color: #166534;">GẠO ĐỒNG BẰNG</span><br>
+        <span class="text-xl font-bold text-amber-600">SÔNG CỬU LONG</span>
+      </a>
 
       <!-- Desktop Menu -->
-      <ul class="hidden md:flex space-x-12 text-lg font-medium items-center">
-        <li><a href="#home" class="hover:text-yellow-600 transition">Trang chủ</a></li>
-
-        <!-- Dropdown Sản phẩm – chỉ chữ -->
+      <ul class="hidden md:flex space-x-10 lg:space-x-12 text-lg font-medium items-center">
+        <li><a href="#home" class="hover:text-amber-600 transition">Trang chủ</a></li>
+        
+        <!-- Dropdown Sản phẩm -->
         <li class="relative group">
-          <a href="#products" class="hover:text-yellow-600 transition flex items-center">
+          <a href="#products" class="hover:text-amber-600 transition flex items-center">
             Sản phẩm
             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </a>
-          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
-            <li><a href="st25.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Gạo ST25</a></li>
-            <li><a href="nangthom.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Nàng Thơm Chợ Đào</a></li>
-            <li><a href="tam-haihau.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Tám Hải Hậu</a></li>
-            <li><a href="huyet-rong.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium">Gạo Huyết Rồng</a></li>
-            <li><a href="nep-thaibinh.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Nếp Cái Hoa Vàng</a></li>
+          <ul class="absolute top-full left-0 mt-3 w-72 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-green-100">
+            <li><a href="st25.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium rounded-t-2xl">Gạo ST25 – Ngon nhất thế giới</a></li>
+            <li><a href="st24.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium">Gạo ST24</a></li>
+            <li><a href="jasmine.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium">Jasmine 85</a></li>
+            <li><a href="daithom8.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium">Đài Thơm 8</a></li>
+            <li><a href="nanghoa9.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium">Nàng Hoa 9</a></li>
+            <li><a href="ongcua.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium rounded-b-2xl">Gạo Ông Cua ST25</a></li>
           </ul>
         </li>
 
         <!-- Dropdown Tin tức & Sự kiện -->
         <li class="relative group">
-          <a href="#" class="hover:text-yellow-600 transition flex items-center">
+          <a href="#" class="hover:text-amber-600 transition flex items-center">
             Tin tức & Sự kiện
             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </a>
-          <ul class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-yellow-100">
-            <li><a href="tin-tuc.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-t-2xl">Tin tức</a></li>
-            <li><a href="su-kien.html" class="block px-6 py-4 hover:bg-yellow-50 hover:text-yellow-700 font-medium rounded-b-2xl">Sự kiện</a></li>
+          <ul class="absolute top-full left-0 mt-3 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-green-100">
+            <li><a href="tin-tuc.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium rounded-t-2xl">Tin tức gạo</a></li>
+            <li><a href="su-kien.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium">Sự kiện & Hội chợ</a></li>
+            <li><a href="hoat-dong.html" class="block px-6 py-4 hover:bg-amber-50 hover:text-amber-700 font-medium rounded-b-2xl">Hoạt động cộng đồng</a></li>
           </ul>
         </li>
 
-        <li><a href="#contact" class="hover:text-yellow-600 transition">Liên hệ</a></li>
+        <li><a href="#contact" class="hover:text-amber-600 transition">Liên hệ</a></li>
       </ul>
 
       <!-- Mobile Menu -->
       <div x-data="{open:false}" class="md:hidden">
-        <button @click="open=!open" class="text-3xl text-yellow-600">Menu</button>
-        <div x-show="open" @click.away="open=false" class="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-yellow-100">
+        <button @click="open=!open" class="text-3xl text-green-700">Menu</button>
+        <div x-show="open" @click.away="open=false" class="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-green-100">
           <ul class="py-8 text-center space-y-6 text-lg font-medium">
-            <li><a href="Index.html" @click="open=false" class="block hover:text-yellow-600">Trang chủ</a></li>
-            <li><a href="#products" @click="open=false" class="block hover:text-yellow-600">Sản phẩm</a></li>
-            <li><a href="tin-tuc.html" @click="open=false" class="block hover:text-yellow-600">Tin tức</a></li>
-            <li><a href="su-kien.html" @click="open=false" class="block hover:text-yellow-600">Sự kiện</a></li>
-            <li><a href="#contact" @click="open=false" class="block hover:text-yellow-600">Liên hệ</a></li>
+            <li><a href="#home" @click="open=false" class="block hover:text-amber-600">Trang chủ</a></li>
+            <li><a href="#products" @click="open=false" class="block hover:text-amber-600">Sản phẩm</a></li>
+            <li><a href="tin-tuc.html" @click="open=false" class="block hover:text-amber-600">Tin tức</a></li>
+            <li><a href="su-kien.html" @click="open=false" class="block hover:text-amber-600">Sự kiện</a></li>
+            <li><a href="#contact" @click="open=false" class="block hover:text-amber-600">Liên hệ</a></li>
           </ul>
         </div>
       </div>
@@ -75,100 +80,204 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" 
-           style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1591794444170-7d03117f20e5?q=80&w=2070&auto=format&fit=crop')">
-    <div class="relative z-10 px-6 max-w-5xl">
-      <h2 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight drop-shadow-2xl">Hạt Ngọc Trời Việt</h2>
-      <p class="text-2xl md:text-4xl text-yellow-200 mb-10 font-light tracking-wide">Gạo ngon nhất thế giới – Tự hào Việt Nam</p>
-      <a href="#products" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition transform hover:-translate-y-2">
+  <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1592922593632-3ed7e7e3e8e9?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;">
+    <div class="relative z-10 px-6 max-w-6xl mx-auto">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight drop-shadow-2xl">
+        HẠT NGỌC<br>ĐỒNG BẰNG SÔNG CỬU LONG
+      </h1>
+      <p class="text-2xl md:text-4xl text-amber-300 mb-10 font-light tracking-wider">
+        Nơi phù sa bồi đắp nên những hạt gạo thơm ngon nhất hành tinh
+      </p>
+      <a href="#products" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 px-12 py-6 rounded-full text-xl font-bold shadow-2xl transition transform hover:-translate-y-2">
         Xem sản phẩm ngay
       </a>
     </div>
   </section>
 
-  <!-- Sản phẩm -->
+  <!-- Giới thiệu ngắn -->
+  <section id="about" class="py-24 bg-gradient-to-b from-green-50 to-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-6xl font-black text-green-800 mb-10">Từ Cánh Đồng Phù Sa Màu Mỡ</h2>
+      <p class="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+        Đồng Bằng Sông Cửu Long – vựa lúa lớn nhất Việt Nam, nơi những giọt phù sa sông Mekong bồi đắp nên 
+        <span class="text-amber-600 font-bold">Gạo ST25 ngon nhất thế giới 2019 & 2023</span>, 
+        cùng hàng loạt giống lúa thơm dẻo nổi tiếng khắp năm châu.
+      </p>
+      <div class="grid md:grid-cols-4 gap-10 mt-16">
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+          <div class="text-5xl font-black text-amber-600">13</div>
+          <p class="text-lg font-medium mt-2">Tỉnh thành ĐBSCL</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+          <div class="text-5xl font-black text-amber-600">>50%</div>
+          <p class="text-lg font-medium mt-2">Sản lượng lúa cả nước</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+          <div class="text-5xl font-black text-amber-600">>90%</div>
+          <p class="text-lg font-medium mt-2">Lượng gạo xuất khẩu VN</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+          <div class="text-5xl font-black text-amber-600">2 lần</div>
+          <p class="text-lg font-medium mt-2">Gạo ngon nhất thế giới</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sản phẩm nổi bật -->
   <section id="products" class="py-24 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl md:text-6xl font-black text-center text-yellow-700 mb-16">Sản phẩm gạo cao cấp</h2>
-      <p class="text-center text-xl text-gray-600 mb-16 max-w-3xl mx-auto">Những giống lúa quý được chọn lọc từ cánh đồng vàng óng ánh</p>
+      <h2 class="text-4xl md:text-6xl font-black text-center text-green-800 mb-6">Sản Phẩm Nổi Bật</h2>
+      <p class="text-center text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
+        Tinh hoa từ những giống lúa được chọn lọc kỹ càng, đạt chuẩn xuất khẩu toàn cầu
+      </p>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <a href="st25.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_ST25.jpg" alt="Gạo ST25" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Gạo ST25</h3>
-            <p class="text-lg text-gray-700">Ngon nhất thế giới 2019 & 2023</p>
+        <!-- ST25 -->
+        <a href="st25.html" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-6">
+          <div class="relative">
+            <img src="https://gaost25.com.vn/wp-content/uploads/2023/11/gao-st25-ngon-nhat-the-gioi.jpg" alt="Gạo ST25" class="w-full h-96 object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-amber-500 text-white px-4 py-2 rounded-full font-bold text-sm">
+              NGON NHẤT THẾ GIỚI
+            </div>
+          </div>
+          <div class="p-8 text-center bg-gradient-to-t from-green-50 to-white">
+            <h3 class="text-3xl font-bold text-green-800 mb-3">Gạo ST25</h3>
+            <p class="text-lg text-gray-700">Hương lá dứa tự nhiên, hạt dài, trắng trong, cơm dẻo thơm</p>
           </div>
         </a>
 
-        <a href="nangthom.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao-nang-thom.jpg" alt="Nàng Thơm Chợ Đào" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Nàng Thơm Chợ Đào</h3>
-            <p class="text-lg text-gray-700">Thơm nồng, dẻo mềm truyền thống</p>
+        <!-- ST24 -->
+        <a href="st24.html" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-6">
+          <img src="https://gaoanpha.vn/wp-content/uploads/2023/10/gao-st24-1.jpg" alt="Gạo ST24" class="w-full h-96 object-cover group-hover:scale-110 transition">
+          <div class="p-8 text-center bg-gradient-to-t from-green-50 to-white">
+            <h3 class="text-3xl font-bold text-green-800 mb-3">Gạo ST24</h3>
+            <p class="text-lg text-gray-700">Á quân thế giới 2017, thơm jasmine đậm đà</p>
           </div>
         </a>
 
-        <a href="tam-haihau.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_tam_hai_hau.jpg" alt="Tám Hải Hậu" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Tám Hải Hậu</h3>
-            <p class="text-lg text-gray-700">Đặc sản miền Bắc – Vua của cốm làng Vòng</p>
+        <!-- Jasmine 85 -->
+        <a href="jasmine.html" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-6">
+          <img src="https://gaosachau.com/wp-content/uploads/2023/05/gao-jasmine-85.jpg" alt="Jasmine 85" class="w-full h-96 object-cover group-hover:scale-110 transition">
+          <div class="p-8 text-center bg-gradient-to-t from-green-50 to-white">
+            <h3 class="text-3xl font-bold text-green-800 mb-3">Jasmine 85</h3>
+            <p class="text-lg text-gray-700">Hương hoa lài quyến rũ, xuất khẩu hàng đầu</p>
           </div>
         </a>
 
-        <a href="huyet-rong.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_huyet_rong.jpg" alt="Gạo Huyết Rồng" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Gạo Huyết Rồng</h3>
-            <p class="text-lg text-gray-700">Gạo lứt đỏ tốt cho sức khỏe</p>
+        <!-- Đài Thơm 8 -->
+        <a href="daithom8.html" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-6">
+          <img src="https://gaolut.vn/wp-content/uploads/2023/08/dai-thom-8.jpg" alt="Đài Thơm 8" class="w-full h-96 object-cover group-hover:scale-110 transition">
+          <div class="p-8 text-center bg-gradient-to-t from-green-50 to-white">
+            <h3 class="text-3xl font-bold text-green-800 mb-3">Đài Thơm 8</h3>
+            <p class="text-lg text-gray-700">Thơm nhẹ, dẻo vừa, rất được ưa chuộng tại châu Âu</p>
           </div>
         </a>
 
-        <a href="nep-thaibinh.html" class="group block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4">
-          <img src="gao_net_cai_hoa_vang.jpg" alt="Nếp Cái Hoa Vàng" class="w-full h-80 object-cover group-hover:scale-110 transition">
-          <div class="p-8 text-center bg-gradient-to-t from-yellow-50 to-white">
-            <h3 class="text-3xl font-bold text-yellow-700 mb-2">Nếp Cái Hoa Vàng</h3>
-            <p class="text-lg text-gray-700">Nếp ngon nhất Việt Nam</p>
+        <!-- Nàng Hoa 9 -->
+        <a href="nanghoa9.html" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-6">
+          <img src="https://gaosachmrbinh.vn/wp-content/uploads/2023/10/nang-hoa-9.jpg" alt="Nàng Hoa 9" class="w-full h-96 object-cover group-hover:scale-110 transition">
+          <div class="p-8 text-center bg-gradient-to-t from-green-50 to-white">
+            <h3 class="text-3xl font-bold text-green-800 mb-3">Nàng Hoa 9</h3>
+            <p class="text-lg text-gray-700">Hạt dài, trắng bầu, cơm mềm thơm</p>
           </div>
+        </a>
+
+        <!-- Gạo Ông Cua ST25 -->
+        <a href="ongcua.html" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-6">
+          <img src="https://gaoongcua.com.vn/wp-content/uploads/2024/01/gao-ong-cua-st25-2024.jpg" alt="Gạo Ông Cua" class="w-full h-96 object-cover group-hover:scale-110 transition">
+          <div class="p-8 text-center bg-gradient-to-t from-green-50 to-white">
+            <h3 class="text-3xl font-bold text-green-800 mb-3">Gạo Ông Cua ST25</h3>
+            <p class="text-lg text-gray-700">Thương hiệu nổi tiếng nhất ĐBSCL hiện nay</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tin tức & Sự kiện nổi bật -->
+  <section class="py-24 bg-green-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl md:text-6xl font-black text-center text-green-800 mb-16">Tin tức & Sự kiện mới nhất</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <a href="tin-tuc/st25-2025.html" class="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070" alt="ST25" class="w-full h-64 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <span class="text-sm font-bold text-amber-600">02/12/2025</span>
+            <h3 class="text-2xl font-bold text-green-800 mt-3 group-hover:text-amber-600 transition">
+              Gạo ST25 tiếp tục giữ vững ngôi vương “Gạo ngon nhất thế giới” 2025
+            </h3>
+            <p class="text-gray-600 mt-4">Tại Hội nghị Gạo Thế giới 2025 ở Philippines...</p>
+          </div>
+        </a>
+
+        <a href="su-kien/hoi-cho-gao-vietnam-2025.html" class="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1581291518635-7e1d4d0c2e8b?q=80&w=2070" alt="Hội chợ" class="w-full h-64 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <span class="text-sm font-bold text-amber-600">28/11/2025</span>
+            <h3 class="text-2xl font-bold text-green-800 mt-3 group-hover:text-amber-600 transition">
+              Tham gia Hội chợ Gạo Quốc tế Việt Nam 2025 tại Cần Thơ
+            </h3>
+            <p class="text-gray-600 mt-4">Gian hàng lớn nhất với 20 giống gạo cao cấp...</p>
+          </div>
+        </a>
+
+        <a href="tin-tuc/xuat-khau-thang-11.html" class="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1583258199134-3e8c4f9e0d88?q=80&w=2070" alt="Xuất khẩu" class="w-full h-64 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <span class="text-sm font-bold text-amber-600">20/11/2025</span>
+            <h3 class="text-2xl font-bold text-green-800 mt-3 group-hover:text-amber-600 transition">
+              Xuất khẩu 500 tấn gạo ST25 sang châu Âu trong tháng 11
+            </h3>
+            <p class="text-gray-600 mt-4">Đơn hàng lớn nhất từ trước đến nay với đối tác Đức...</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="tin-tuc.html" class="text-amber-600 font-bold text-xl hover:text-amber-700 transition">
+          Xem tất cả tin tức → 
         </a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="bg-yellow-600 text-white py-16">
+  <footer id="contact" class="bg-green-800 text-white py-20">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-4 gap-10">
+      <div class="grid md:grid-cols-4 gap-12">
         <div>
-          <h3 class="text-3xl font-black mb-4">GẠO VIỆT NAM</h3>
-          <p class="text-yellow-100 leading-relaxed">Hạt ngọc trời – Mang tinh hoa đồng lúa Việt ra thế giới</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-bold mb-4">Liên hệ</h4>
-          <p class="text-yellow-50 leading-relaxed">
-            Công ty TNHH Gạo Việt Nam<br>
-            123 Đường Lúa Vàng, TP. Hồ Chí Minh<br>
-            Hotline: 1900 1234
+          <h3 class="text-3xl font-black mb-6 text-amber-400">GẠO ĐBSCL</h3>
+          <p class="text-green-100 leading-relaxed">
+            Mang hạt ngọc miền Tây sông nước đến mọi nhà trên thế giới.
           </p>
         </div>
         <div>
-          <h4 class="text-xl font-bold mb-4">Email</h4>
-          <p class="text-yellow-50">info@gaovietnam.vn</p>
-          <h4 class="text-xl font-bold mt-6 mb-4">Zalo / Điện thoại</h4>
-          <p class="text-yellow-50">0909 888 999</p>
+          <h4 class="text-2xl font-bold mb-6">Thông tin liên hệ</h4>
+          <p class="text-green-100 leading-relaxed">
+            Công ty TNHH Gạo Đồng Bằng Sông Cửu Long<br>
+            Ấp 1, Xã Tân Phú, Huyện Châu Thành, Tiền Giang<br>
+            Hotline: <span class="text-amber-300 font-bold">1900 252 525</span>
+          </p>
         </div>
         <div>
-          <h4 class="text-xl font-bold mb-6">Theo dõi chúng tôi</h4>
-          <div class="flex space-x-6 text-3xl">
-            <a href="#" class="hover:text-yellow-200 transition">Facebook</a>
-            <a href="#" class="hover:text-yellow-200 transition">Instagram</a>
-            <a href="#" class="hover:text-yellow-200 transition">YouTube</a>
+          <h4 class="text-2xl font-bold mb-6">Email & Zalo</h4>
+          <p class="text-amber-300 text-lg">info@gaodbscl.vn</p>
+          <p class="text-green-100 mt-3">Zalo OA: Gạo Đồng Bằng Sông Cửu Long</p>
+        </div>
+        <div>
+          <h4 class="text-2xl font-bold mb-6">Theo dõi chúng tôi</h4>
+          <div class="flex space-x-8 text-3xl">
+            <a href="#" class="hover:text-amber-400 transition">Facebook</a>
+            <a href="#" class="hover:text-amber-400 transition">Instagram</a>
+            <a href="#" class="hover:text-amber-400 transition">YouTube</a>
+            <a href="#" class="hover:text-amber-400 transition">TikTok</a>
           </div>
         </div>
       </div>
-      <div class="border-t border-yellow-500 mt-12 pt-8 text-center text-yellow-100">
-        <p class="text-sm">© 2025 Công ty TNHH Gạo Việt Nam. Tất cả quyền được bảo lưu.</p>
+      <div class="border-t border-green-700 mt-16 pt-10 text-center">
+        <p class="text-green-200">© 2025 Gạo Đồng Bằng Sông Cửu Long – Tự hào hạt Việt</p>
       </div>
     </div>
   </footer>
